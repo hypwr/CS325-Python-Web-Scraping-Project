@@ -45,7 +45,7 @@ def articleScraper(urlFile) -> None:
     for url in urls:
         rawHTML=Pull_HTML(url)
         outputData=Scrape(rawHTML)
-        fileName=str(outputData[0])+".txt"
+        filename=str(outputData[0])+".txt"
         output=outputData[1]
         outputDataFile(output, filename)
         print("Done!")
