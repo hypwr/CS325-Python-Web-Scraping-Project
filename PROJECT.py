@@ -10,7 +10,7 @@ def Pull_URLs(filename):
     openFile.close()
     return url
 
-# Pull the html from a url of a webpage
+# Pulls the raw html from a url of a webpage
 def Pull_HTML(url):
     pageContent=requests.get(url).text
     return pageContent
@@ -21,6 +21,7 @@ def Pull_HTML(url):
 # On one test article, instead of having one space after a sentence, it had 2 spaces after every one?
 # ----------------------------------------------------------------------------------------------------------------
 # FIXED: Scrapes for h1 tag for the title. Scrapes for a specific div tag and then pulls the p tags from that div element and the respective text.
+# Utilizes the beautiful soup libaries built in commands and finding/cleaning methods.
 def Scrape(pageContent):
     soup = BeautifulSoup(pageContent, 'lxml')
     articleName = soup.find_all('h1')
@@ -34,12 +35,15 @@ def Scrape(pageContent):
     outputData=[title,totalContent]
     return outputData
 
+# Takes the cleaned article content and stores it in a file named (Article Title Here).txt
 def outputDataFile(outputData, filename)->None:
-
-    f = open(str(filename),"x")
+    f = open(str(filename),"x",encoding='utf-8')
     f.write(str(outputData))
     f.close()
 
+# Uses all the previously defined functions to streamline the process, it takes the URL file, pulls the HTML, scrapes the HTML,
+# names the file, and places the content into the file. The files should be outputted into the current working directory the program is in.
+# The program does take a bit of time as it has to pull the data from each website.
 def articleScraper(urlFile) -> None:
     urls=Pull_URLs(urlFile)
     for url in urls:
@@ -48,6 +52,14 @@ def articleScraper(urlFile) -> None:
         filename=str(outputData[0])+".txt"
         output=outputData[1]
         outputDataFile(output, filename)
-        print("Done!")
+    print("Article content has been stored!")
 
-articleScraper("C:/Users/joshu/Documents/CS325/PROJECT/list.txt")
+# articleScraper("list.txt")
+# Asks for the file name/path and then calls articleScrapert
+def main() -> None:
+    print("Input the name of the file or its path containing the URLs:")
+    urlFile=input()
+    articleScraper(urlFile)
+
+# Run main.
+main()
