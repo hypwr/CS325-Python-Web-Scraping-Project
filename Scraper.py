@@ -42,7 +42,7 @@ def Scrape(pageContent):
         totalContent=''
         for content in articleContent:
             totalContent = totalContent+' '+content.text
-        
+# If you want to change the output data to be more readable in the text file, then change the line above to: totalContent = totalContent+content.text+'\n'
         outputData=[title,totalContent]
         return outputData
     except:
