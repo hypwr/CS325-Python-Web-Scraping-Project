@@ -31,6 +31,7 @@ def Pull_HTML(url):
 # ----------------------------------------------------------------------------------------------------------------
 # FIXED: Scrapes for h1 tag for the title. Scrapes for a specific div tag and then pulls the p tags from that div element and the respective text.
 # Utilizes the beautiful soup libaries built in commands and finding/cleaning methods.
+# Possible issue if quotes are found in the title, unsure of how to reproduce issue with one unrelated article.
 def Scrape(pageContent):
     try:
         soup = BeautifulSoup(pageContent, 'lxml')
@@ -56,6 +57,7 @@ def outputDataFile(outputData, filename)->None:
         f.close()
     except:
         print("Unable to create file/file already exists.")
+        pass
 
 # Uses all the previously defined functions to streamline the process, it takes the URL file, pulls the HTML, scrapes the HTML,
 # names the file, and places the content into the file. The files should be outputted into the current working directory the program is in.
@@ -75,7 +77,7 @@ def articleScraper(urlFile) -> None:
         pass
 
 # articleScraper("list.txt")
-# Asks for the file name/path and then calls articleScrapert
+# Asks for the file name/path and then calls articleScraper
 def main() -> None:
     print("Input the name of the file or its path containing the URLs:")
     urlFile=input()
