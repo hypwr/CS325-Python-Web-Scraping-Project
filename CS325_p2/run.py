@@ -2,6 +2,8 @@
 # IT IS REQUIRED THAT THE CURRENT WORKING DIRECTORY IS THE SAME FOLDER AS THIS ONE #
 ####################################################################################
 
+# run.py takes an argument of the name of the URL file contained in the same folder, then using pre-existing functions, it outputs the datafiles.
+
 from bs4 import BeautifulSoup
 import requests
 import argparse
