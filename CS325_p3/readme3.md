@@ -18,4 +18,5 @@ Replace the highlighted section with your Google API Key:
 ![image](https://github.com/hypwr/CS325-Python-Web-Scraping-Project/assets/147878375/1a1abca2-d451-4cc7-89f2-1cf5c36ea7bb)
 Google has a very simple and easy library to use for it's Gemini API, so if you want to ask it something different, just change the message variable and it should output the response.
 
-At a bare minimum to use the API: you have to set/configure the API key, set the model (in this case it's set to gemini-pro), and then to ask a simple question and get the response use this code: output = self.model.generate_content(YOUR_QUESTION_HERE)
+At a bare minimum to use the API: you have to set/configure the API key, set the model (in this case it's set to gemini-pro), and then to ask a simple question and get the response use this code: output = self.model.generate_content(YOUR_QUESTION_HERE). Reference the geminiAPI.py file at any point to see the correct structure for using the API.
+
