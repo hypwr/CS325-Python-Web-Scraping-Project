@@ -2,6 +2,7 @@
 ## By Josh Erwin
 ### Switch to the main branch to see project 1.
 ### Switch to the p2 branch to see project 2.
+### Project 3 is inside the CS325_p3 folder.
 
 ## NEW TO PROJECT 3
 Project 3 adds the addition of AI summarization through the Gemini API. This program asks the AI, "Please take the following article and summarize it in 50 words or less, here is the article: " followed by the article content. This question can be changed as one sees fit.
