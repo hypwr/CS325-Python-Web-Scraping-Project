@@ -1,9 +1,16 @@
-# CS325 Web Scraper - Project 1
+# CS325 Web Scraper - Project 3
 ## By Josh Erwin
-### Switch to the p3 branch to see project 3.
+### Switch to the main branch to see project 1.
 ### Switch to the p2 branch to see project 2.
+
+## NEW TO PROJECT 3
+Project 3 adds the addition of AI summarization through the Gemini API. This program asks the AI, "Please take the following article and summarize it in 50 words or less, here is the article: " followed by the article content. This question can be changed as one sees fit.
+
+## NEW TO PROJECT 2
+You must now use an argument when using the program. For example, python run.py list.txt, would be the code to run to have the program work on list.txt. However, one major change is that the current working directory of the program must be inside the project folder.
+
 ### Quick Rundown
-This python based webscraper utilizes the BeautifulSoup4 library to scrape a html file for an article's title and content. To use this program, you'll need two things: 
+This python based webscraper utilizes the BeautifulSoup4 library to scrape a html file for an article's title and content. It also uses google's Gemini AI API to generate a summary of the article. To use this program, you'll need two things: 
 1. A ".txt" file containing URLs of specific webpages containing the article you want to scrape (with a single URL on each line of the file). These URLs must be from the https://www.nbcnews.com/ website.
 2. A python environment matching that of the one in the requirements.yml file.
 
