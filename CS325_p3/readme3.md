@@ -14,6 +14,6 @@ IMPORTANT Keep these keys secure and copy the key:
 ![image](https://github.com/hypwr/CS325-Python-Web-Scraping-Project/assets/147878375/f9d0c959-1db0-492b-9bee-fa344ef52b6b)
 Replace the highlighted section with your Google API Key:
 ![image](https://github.com/hypwr/CS325-Python-Web-Scraping-Project/assets/147878375/82e3caaa-7175-4fd8-ba7b-d3f4717aff8a)
-\Then using a class structure like the one below, you can call the API (in this case, using the geminiSummary function):
+<br/>Then using a class structure like the one below, you can call the API (in this case, using the geminiSummary function):
 ![image](https://github.com/hypwr/CS325-Python-Web-Scraping-Project/assets/147878375/1a1abca2-d451-4cc7-89f2-1cf5c36ea7bb)
 Google has a very simple and easy library to use for it's Gemini API, so if you want to ask it something different, just change the message variable and it should output the response.
