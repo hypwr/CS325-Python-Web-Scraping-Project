@@ -5,6 +5,8 @@
 
 ## NEW TO PROJECT 3
 Project 3 adds the addition of AI summarization through the Gemini API. This program asks the AI, "Please take the following article and summarize it in 50 words or less, here is the article: " followed by the article content. This question can be changed as one sees fit.
+One major thing you must do to use the program is navigate to the 'module1' folder and open the GeminiAPI.py file. At the top of this file, you will see a variable called GOOGLE_API_KEY. This variable should be set equal to your Google API key. To get a Google API key for free (assuming your Google account does not already have one) go to "https://ai.google.dev/tutorials/get_started_web". Then scroll down until you see the box "Get an API key". Follow its directs and then once you have a key, copy and paste the key into the quoted area on the GOOGLE_API_KEY variable.
+Please remember to update your requirements.yml as this was changed during this section of the project.
 
 ## NEW TO PROJECT 2
 You must now use an argument when using the program. For example, python run.py list.txt, would be the code to run to have the program work on list.txt. However, one major change is that the current working directory of the program must be inside the project folder.
@@ -24,6 +26,8 @@ This program, as mentioned above, uses the BeautifulSoup4 library as well as lxm
 The Scrape() function then searches for any 'h1' tags in the HTML. For nbcnews.com, the only 'h1' tag to appear on the articles I checked was the title, so the article name is stored for file naming. The rest of the content of the article is under a specific 'div' tag, the class of "article-body__content". We then scrape this part of the HTML for 'p' tags containing the body of the article. The total content of the article is combined into one string, and then both the title and the content are returned by this function. Finally, outputDataFile() opens a new file titled the title of the article, and places the content into it (using utf-8 encoding for special characters). This file is then close and should appear in your current working directory. 
 
 Lastly, the articleScraper() function compacts all of the previously mentioned functions into one nice function that calls all the previous ones in the correct order for each article. Every function has basic error reporting that should give the user an idea as to what went wrong and to prevent the program from crashing on error.
+
+NEW: Now it uses classes from seperate modules to have more organized code, the major change in functionality however is that geminiSummary() is called and a 3rd document is outputed containing a close to 50 word summary on the article.
 
 ### Detailed Instructions
 1. Create a .txt file and place the URL's of the articles you wish to scrape in this file one by one. This means after pasting a URL, hit enter or newline. Furthermore, make sure these are from www.nbcnews.com and are preferably from the business section. Once you're done with this file, save it in a specific folder of your choosing.
