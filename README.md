@@ -1,6 +1,7 @@
 # CS325 Web Scraper - Project 1
 ## By Josh Erwin
 ### Project 2 is in the CS325_p2 folder.
+### Switch to p3 branch for project 3.
 ### Quick Rundown
 This python based webscraper utilizes the BeautifulSoup4 library to scrape a html file for an article's title and content. To use this program, you'll need two things: 
 1. A ".txt" file containing URLs of specific webpages containing the article you want to scrape (with a single URL on each line of the file). These URLs must be from the https://www.nbcnews.com/ website.
