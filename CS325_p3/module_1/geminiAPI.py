@@ -2,7 +2,7 @@
 import google.generativeai as genai
 
 # This is where your google API key is inputed, this key should be kept private and for larger projects, a seperate database might be accessed to get the key.
-GOOGLE_API_KEY="AIzaSyDecbto-ZblTEDPoNDl_BpjvjUjw7zvWt8"
+GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # This class interacts with the gemini API to ask the following question: 
