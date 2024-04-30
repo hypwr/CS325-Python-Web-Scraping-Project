@@ -2,6 +2,7 @@ from xml.etree import ElementTree as ET
 import argparse
 
 class OutputHTML():
+    # parser that takes two arguments
     def parser(self):
         parser=argparse.ArgumentParser()
         parser.add_argument(help="contentFileName.txt",dest="file_name",type=str)
