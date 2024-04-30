@@ -1,8 +1,13 @@
-# CS325 Web Scraper - Project 3
+# CS325 Web Scraper - Project 5
 ## By Josh Erwin
+### Project 5 is inside of the WEBPAGE CREATION folder.
+### Project 5 is also incorperated into project 5 inside of the p5 folder.
 ### Switch to the main branch to see project 1.
 ### Switch to the p2 branch to see project 2.
 ### Project 3 is inside the CS325_p3 folder.
+
+## NEW TO PROJECT 5
+Project 5 was more or less a seperate module that takes 2 file inputs, one having the content seperated via title and content repeatedly. The webpage_creation folder holds the actual project 5, while the p5 folder holds the previous projects (project 3, and incorperates a modified version of project 5 in the code, however it requires an API request to be made.)
 
 ## NEW TO PROJECT 3
 Project 3 adds the addition of AI summarization through the Gemini API. This program asks the AI, "Please take the following article and summarize it in 50 words or less, here is the article: " followed by the article content. This question can be changed as one sees fit.
